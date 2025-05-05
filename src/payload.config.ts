@@ -36,6 +36,12 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI || "",
     },
   }),
+  bin: [
+    {
+      scriptPath: path.resolve(dirname, "seed.ts"),
+      key: "seed",
+    },
+  ],
   sharp,
   plugins: [
     payloadCloudPlugin(),
