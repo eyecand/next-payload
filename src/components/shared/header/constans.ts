@@ -3,7 +3,7 @@ import { MenuListProps } from "./model";
 export const menuList: MenuListProps[] = [
   {
     name: "Home",
-    url: "localhost",
+    url: "http://localhost:3000/",
   },
   {
     name: "Apparel",
@@ -12,5 +12,9 @@ export const menuList: MenuListProps[] = [
   {
     name: "Accessories",
     url: "/category/accessories",
+  },
+  {
+    name: "Digital",
+    url: "/category/digital",
   },
 ];

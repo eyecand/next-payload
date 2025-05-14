@@ -14,8 +14,7 @@ export const Header = () => {
     <header className="z-50 py-4 sticky top-0 bg-white/90 backdrop-blur-xs nav-border-reveal">
       <div className="mx-auto flex max-w-7xl items-center gap-2 px-4 flex-row sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="">
-          {" "}
+        <a href="http://localhost:3000/">
           <span className="inline-block -mt-0.5 whitespace-nowrap text-xl font-bold">
             Your Next Store
           </span>
@@ -26,7 +25,7 @@ export const Header = () => {
             <ul className="flex flex-row items-center justify-center gap-x-1">
               {menuList.map((item, index) => (
                 <a key={index} href={item.url}>
-                  <li className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden">
+                  <li className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground active:bg-accent active:text-accent-foreground active:outline-hidden">
                     {item.name}
                   </li>
                 </a>
